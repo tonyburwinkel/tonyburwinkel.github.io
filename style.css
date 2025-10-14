@@ -43,10 +43,18 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+.pill-group {
+  display: flex;           /* makes it a flex container */
+  flex-direction: column;  /* stack heading + pills vertically */
+  align-items: center;     /* center everything horizontally */
+  margin-bottom: 2rem;     /* spacing between sections */
+}
+
 .pills {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .pills span {
