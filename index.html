@@ -1,29 +1,84 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css"></link>
-    <title>Your Name Here</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony Burwinkel | Technical Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <h1>Tony Burwinkel</h1>
+    <p>(314) 910-7409 | Northampton, MA 01060 | <a href="mailto:tony.burwinkel@gmail.com">tony.burwinkel@gmail.com</a></p>
+  </header>
 
-<div id="header"><h1>Your Name Here</h1></div>
+  <section class="skills">
+    <h2>Technical Knowledge</h2>
 
-<div id="langs" class="section">
-  <h2>-My Languages-</h2>
-  <ul>
-    <li></li>
-  </ul>
-</div>
+    <div class="pill-group">
+      <h3>Languages</h3>
+      <div class="pills">
+        <span>Python</span><span>Powershell</span><span>KQL</span><span>SQL</span><span>Bash</span>
+        <span>CMD</span><span>Java</span><span>C</span><span>Javascript</span><span>HTML</span><span>CSS</span>
+      </div>
+    </div>
 
-<div id="skills" class="section">
-  <h2>-My Skills-</h2>
-  <ul>
-    <li>git</li>
-  </ul>
-</div>
-    
+    <div class="pill-group">
+      <h3>Professional Certifications</h3>
+      <div class="pills">
+        <span>CompTIA Security+</span><span>ISC2 Certified in Cybersecurity (CC)</span>
+      </div>
+    </div>
+
+    <div class="pill-group">
+      <h3>Tools & Frameworks</h3>
+      <div class="pills">
+        <span>Microsoft Office Suite</span><span>Azure</span><span>Microsoft Sentinel SIEM/SOAR</span>
+        <span>Microsoft Entra IAM</span><span>Microsoft Purview</span><span>Microsoft Defender Suite</span>
+        <span>Crowdstrike Falcon EDR</span><span>Connectwise Control RMM</span><span>Tenable Nessus</span>
+        <span>VMWare Workspace One MDM</span><span>Cherwell Ticketing System</span><span>Burpsuite</span><span>Wireshark</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <a href="https://github.com/tonyburwinkel/browser-buster" class="project-card">
+        <img src="images/browserbuster.png" alt="Browser Buster preview" />
+        <div class="project-content">
+          <h3>Browser Buster</h3>
+          <p>Developed schema adapters to expose and edit browser SQLite databases from a unified GUI platform. Integrated into Malware/PUP remediation using Crowdstrike EDR.</p>
+          <span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">CMD</span><span class="tag">SQL</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/tonyburwinkel/asymmetric-crypto-demo" class="project-card">
+        <img src="images/crypto.png" alt="Asymmetric Cryptography Demonstration preview" />
+        <div class="project-content">
+          <h3>Asymmetric Cryptography Demonstration</h3>
+          <p>Implemented RSA and Diffie Hellman key exchange, with live TLS demonstrations and analysis of computational infeasibility of prime factorization.</p>
+          <span class="tag">Python</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/tonyburwinkel/tcp-simulation" class="project-card">
+        <img src="images/tcp.png" alt="TCP Simulation preview" />
+        <div class="project-content">
+          <h3>TCP Protocol Simulation & Analysis</h3>
+          <p>Constructed and analyzed TCP variants using NS2, AWK, and Python. Plotted data and compared protocol fairness in bandwidth sharing.</p>
+          <span class="tag">NS2</span><span class="tag">Python</span><span class="tag">AWK</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Tony Burwinkel</p>
+  </footer>
 </body>
 </html>
 

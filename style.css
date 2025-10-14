@@ -1,29 +1,125 @@
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background-color: aliceblue;
+  font-family: 'Inter', sans-serif;
+  background-color: #0b0b0d;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
 }
 
-#header {
-	background-color: lightblue;
-	padding: 10px;
-	border-bottom: 1px solid black;
+header {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.section{
-	text-align: center;
-	width:75%;
-	margin: 10px auto 10px auto;
+header h1 {
+  font-size: 2.5rem;
+  color: #b8ff4a;
 }
 
-li {
-	list-style-type: none;
-	padding: 10px;
-	font-size: large;
+header p a {
+  color: #b8ff4a;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: #b8ff4a;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pills span {
+  background: #1b1b1f;
+  color: #b8ff4a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+  transition: background 0.3s;
+}
+
+.pills span:hover {
+  background: #b8ff4a;
+  color: #0b0b0d;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #141417;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  color: #b8ff4a;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  color: #c7c7c7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.tag {
+  background: #1b1b1f;
+  color: #b8ff4a;
+  padding: 0.3rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #222;
+  padding-top: 1rem;
 }
 
